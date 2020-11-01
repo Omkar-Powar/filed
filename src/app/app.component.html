@@ -1,0 +1,9 @@
+<div class="container" *ngIf="!btnClick">
+  <div class="center">
+      <button type="button" (click)="onClick()" class="btn btn-info">
+        Go To Payment Details
+      </button>
+  </div>
+</div>
+
+<router-outlet *ngIf="btnClick"></router-outlet>
